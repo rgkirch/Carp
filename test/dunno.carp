@@ -1,0 +1,9 @@
+(load "IO.carp")
+
+(register-type A "")
+
+(register-type B [a A])
+(defn main []
+  (do
+    (IO.println "send help")
+    (IO.println &(str (width B)))))
